@@ -1,0 +1,35 @@
+.parent {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 100%; /* Adjusted to make it responsive */
+  overflow: hidden; /* Prevents horizontal overflow */
+  position: relative;
+}
+
+.images-row {
+  display: flex;
+  transition: transform 0.5s ease; /* Add transition effect */
+  width: 100%; /* Ensure full width */
+}
+
+.image11 {
+  flex: 1;
+  margin: 10px;
+  transition: transform 0.5s ease; /* Add transition effect */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.image11 img {
+  height: auto; /* Automatically adjust height while maintaining aspect ratio */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  width: 100%; /* Ensure image takes full width of parent */
+}
+
+/* Media Query for smaller screens (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .image11 {
+    flex: 0 0 100%; /* Allow only one image per row */
+    margin: 10px 0; /* Adjust spacing */
+  }
+}

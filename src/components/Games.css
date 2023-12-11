@@ -1,0 +1,19 @@
+.hero-content {
+  margin-top: 100px;
+  /* reduced the vertical gap between two portions */
+}
+
+.steps li {
+  border-color: #10b981;
+  /* changed the color of step borders to green */
+}
+
+.step.success .step-content {
+  color: #10b981;
+  /* changed the color of step text to green */
+}
+
+.btn.success {
+  background-color: #10b981;
+  /* changed the background color of success button to green */
+}

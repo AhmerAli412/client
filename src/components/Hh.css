@@ -1,0 +1,81 @@
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  background-color: #1a1c1f;
+  margin-top: 45px;
+}
+
+#hero{
+  background-color: #1a1c1f;
+}
+
+
+.hero-box .hero-details {
+  width: 50%;
+}
+
+.hero-box .hero-details .hero-heading {
+  font-size: 50px;
+  line-height: 70px;
+  color: #ffffff;
+  font-family: 'Mulish', sans-serif;
+}
+
+.hero-box .hero-details .hero-desc {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.hero-box .hero-details .btn-box {
+  margin-top: 60px;
+}
+
+.hero-box .hero-details .cta-btn {
+  background: white;
+  padding: 15px 30px;
+  margin-right: 30px;
+  border-radius: 50px;
+
+}
+
+
+.hero-box .hero-details .demo {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgb(38, 187, 70);
+}
+
+.hero-box .hero-details .demo:hover {
+  background: rgb(38, 187, 70);
+  color: #ffffff;
+
+}
+
+.hero-box .hero-details .free {
+  background-color: rgb(38, 187, 70);
+  color: white;
+  border: 1px solid rgb(38, 187, 70);
+}
+
+.hero-box .hero-details .free:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid rgb(38, 187, 70);
+}
+
+.hero-box .hero-image {
+  width: 50%;
+
+}
+
+.hero-box .hero-image img {
+  width: 577px;
+}
+
+.cta-btn .free {
+  background-color: rgb(38, 187, 70);
+  color: white;
+}

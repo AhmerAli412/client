@@ -1,0 +1,76 @@
+/* Leaderboard container */
+.leaderboard-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:  #1a1c1f;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  }
+  
+  th {
+    background-color: #24262b;
+    color: white;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .active-sort::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-right: 10px solid #1a1a1a;
+  }
+  
+  td:nth-child(3) {
+    font-size: 20px;
+    color: rgb(42, 207, 42);
+  }
+  
+  .booster-icon {
+    color: #00ff00;
+  }
+  
+  .no-booster-icon {
+    color: #ff0000;
+  }
+  
+  /* Button styles */
+  .sort-btn {
+    background-color: #1a1709;
+    color: #1a1a1a;
+    font-size: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sort-btn:hover {
+    background-color: #00ff00;
+    color: #1a1a1a;
+  }

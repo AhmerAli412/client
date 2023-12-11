@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* body{
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+} */
+i {
+	margin-right: 10px;
+}
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo{
+	padding: 15px;
+	color: #fff;
+}
+
+
+/* .app-container {
+	transition: filter 0.3s ease-in-out;
+  }
+  
+  .blurred .navbar-mainbg {
+	filter: blur(5px);
+  }
+  
+  .navbar-nav .nav-item.disabled a {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.5;
+  } */
+.navbar-mainbg{
+	background-color: #24262b;
+	padding: 0px;
+}
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #5161ce;
+	background-color: white;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #c92929;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color:#24262b;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.text-container1{
+	 position: fixed;
+	top: 20px;
+	right: 20px; 
+	/* margin-top: 25px; */
+	margin-right: 10px;
+	display: flex;
+	align-items: center; /* Align items vertically */
+}
+
+
+
+.flex-container {
+	display: flex;
+	
+  }
+  
+  .address {
+	margin-right: 20px; /* Add some space between the address and user account */
+  }
+
+
+  
+  .signed-in a {
+	text-decoration: none;
+	padding: 12px;
+	flex-wrap: wrap;
+	font-size: 14px;
+	margin: 0 8px 0 0;
+	background: linear-gradient(90deg, rgba(50, 168, 56, 1) 0%, rgba(50, 168, 56, 1) 50%, rgba(87, 194, 33, 1) 50%, rgba(87, 194, 33, 1) 100%);
+	border: 2px solid transparent;
+	color: white;
+	border-radius: 3px;
+	transition: .3s all ease;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+  }
+  
+.text-container1 a{
+    text-decoration: none;
+    padding: 12px;
+    flex-wrap: wrap;
+    /*margin: 30px 0px;
+    */font-size: 14px;
+    margin: 0 8px 0 0;
+    background: linear-gradient(90deg, rgba(50,168,56,1) 0%, rgba(50,168,56,1) 50%, rgba(87,194,33,1) 50%, rgba(87,194,33,1) 100%);
+    border: 2px solid transparent;
+    color: black;
+    border-radius: 3px;
+    transition: .3s all ease;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #24262b;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+.b{
+    /* float: right; */
+    margin-right: 430px;
+    
+}
+
+.btn-primary{
+    height: 60px;
+    width: 90px;
+    padding: 10px;
+    margin-left: 5px;
+    text-align: center ;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 5px;
+    /* border: 1px white solid; */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+/* Existing CSS */
+
+/* ... */
+
+@media (max-width: 767px) {
+	/* Adjustments for smaller screens */
+	.navbar-logo {
+	  padding: 10px; /* Decrease padding */
+	}
+  
+	#navbarSupportedContent ul li a {
+	  padding: 10px 15px; /* Adjust padding */
+	}
+  
+	.hori-selector {
+	  display: none; /* Hide the selector in mobile view */
+	}
+  
+	.text-container1 {
+	  display: none; /* Hide text container in mobile view */
+	}
+  
+	.navbar-mainbg {
+	  padding: 5px; /* Reduce padding */
+	}
+  
+	#navbarSupportedContent ul {
+	  text-align: center; /* Center the links */
+	}
+  
+	#navbarSupportedContent li {
+	  float: none; /* Reset float */
+	  display: inline-block;
+	}
+  
+	#navbarSupportedContent a:not(:only-child):after {
+	  display: none; /* Hide arrow icons in mobile view */
+	}
+  }
+  
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
